@@ -1,0 +1,46 @@
+.navbar {
+    margin-bottom: 60px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    a {
+        color: $font-color;
+        font-size: 18px;
+        transition: all linear .3s;
+        &:hover{
+            color: $main-color;
+        }
+    }
+    button {
+        background-color: $main-color;
+        padding: 12px 32px;
+        color: $white-color;
+        border: none;
+        border-radius: 8px;
+    }
+}
+
+.stickynav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 9999;
+    box-shadow: 0px 4px 90px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px 0 !important;
+    animation: scrollbar 0.5s;
+    -webkit-animation: scrollbar linear 0.5s;
+}
+
+@keyframes scrollbar {
+    from {
+        top: -80%;
+    }
+    to{
+        top: 0;
+    }
+
+}
+

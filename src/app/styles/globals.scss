@@ -1,0 +1,18 @@
+@import './variables';
+@import './breakpoint';
+@import './reset';
+
+@import '../component/Layout/Navbar/Menubar';
+@import '../component/Layout/Footer/footer';
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import '../component/Hero/hero';
+@import '../component/About/about';
+@import '../component/Blog/blog';
+@import '../component/Partners/partner';
+@import '../component/NewsLetter/newsletter';
+@import '../component/Agency/agency';
+@import '../component/Team/team';
+
+body{
+    overflow-x: hidden;
+}

@@ -1,0 +1,147 @@
+.hero{
+    margin-top: 60px;
+    padding-bottom: 80px;
+    @include media-breakpoint-down(md){
+        padding-bottom: 40px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-bottom: 20px;
+    }
+    @include media-breakpoint-down(xl){
+        padding-bottom: 20px;
+    }
+    .left-part{
+        .heroleft-text{
+            h1{
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 90px;
+                
+                @include media-breakpoint-down(lg){
+                    font-size: 40px;
+                    line-height: 60px;
+                    margin-top: 60px;
+                }
+                @include media-breakpoint-down(xl){
+                    font-size: 50px;
+                    line-height: 70px;
+                    margin-top: 60px;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 35px;
+                    line-height: 60px;
+                    margin-top: 60px;
+                }
+                span{
+                    &:first-child{
+                        background: $main-color;
+                        color: $white-color;
+                        padding: 0 16px;
+                        @include media-breakpoint-down(lg){
+                            width: 180px;
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                    }
+                    &:nth-child(2){
+                        display: inline-block;
+                        margin-right: 12px;
+                        @include media-breakpoint-down(md){
+                            margin-right: 10px;
+                        }
+                        // @include media-breakpoint-down(lg){
+                        //     margin-right: 10px;
+                        // }
+                    }
+                    &:last-child{
+                        color: $main-color;
+                    }
+                }
+            }
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                color: $footer-text-color;
+                padding-right: 50px;
+                margin-top: 20px;
+                @include media-breakpoint-down(md){
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                @include media-breakpoint-down(lg){
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            .hero-btn{
+                margin-top: 40px;
+                button{
+                    font-size: 20;
+                    font-weight: 700;
+                    color: $white-color;
+                    outline: none;
+                    border: none;
+                    background: $main-color;
+                    padding: 15px 32px;
+                    border-radius: 8px;
+                    margin-right: 20px;
+                    @include media-breakpoint-down(md){
+                        font-size: 14px;
+                        padding: 10px 18px;
+                    }
+                    @include media-breakpoint-down(lg){
+                        font-size: 18px;
+                        padding: 10px 18px;
+                    }
+                }
+                a{
+                    font-size: 18px;
+                    color: $footer-text-color;
+                    @include media-breakpoint-down(md){
+                        font-size: 14px;
+                    }
+                    @include media-breakpoint-down(lg){
+                        font-size: 16px;
+                    }
+                    svg{
+                        margin-left: 5px;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .hero-social-icons{
+                margin-top: 30px;
+                span{
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $font-color;
+                    margin-top: 2px;
+                    @include media-breakpoint-down(md){
+                        font-size: 14px;
+                        margin-top: 2px;
+                    }
+                    @include media-breakpoint-down(lg){
+                        font-size: 16px;
+                        margin-top: 4px;
+                    }
+                }
+                .social-icons{
+                    font-size: 20px;
+                    @include media-breakpoint-down(md){
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .hero-img{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

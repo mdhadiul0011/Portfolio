@@ -1,0 +1,131 @@
+.Footer{
+    background: $footer-bg-color;
+    width: 100%;
+    padding: 50px 100px;
+    @include media-breakpoint-down(md){
+        padding: 30px 20px;
+    }
+    .parra-01{
+        p{
+            line-height: 30px;
+            padding-top: 45px;
+            font-weight: 400;
+            color: #717171;
+        }
+    }
+    .parra-02{
+        @include media-breakpoint-down(md){
+            margin-top: 20px;
+        }
+        h2{
+            margin-bottom: 30px;
+            color: $footer-heading-color;
+            font-weight: 700;
+            font-size: 20px;
+            @include media-breakpoint-down(md){
+                margin-bottom: 0;
+            }
+        }
+        a{
+            display: block;
+            color: $footer-text-color;
+            padding: 8px 0;
+            font-weight: 500;
+            transition: all linear .2s;
+            &:hover{
+                color: $main-color;
+                padding-left: 5px;
+            }
+        }
+    }
+    .Subscribe{
+        @include media-breakpoint-down(md){
+            margin-top: 50px;
+        }
+        h2{
+            margin-bottom: 30px;
+            color: $footer-heading-color;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        p{
+            color: $footer-text-color;
+            font-size: 17px;
+            line-height: 30px;
+            @include media-breakpoint-down(md){
+                margin-top: -20px;
+            }
+        }
+        .newslatter-form{
+            background: $white-color;
+            border-radius: 8px;
+            @include media-breakpoint-down(xl){
+                width: 285px;
+            }
+
+            @include media-breakpoint-down(xxl){
+                width: 290px;
+            }
+            
+            input{
+                padding: 14px 25px;
+                border: none;
+                background: transparent;
+                outline: none;
+            }
+            button{
+                padding: 14px 18px;
+                border: none;
+                outline: none;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                background: $main-color;
+                color: $white-color;
+                @include media-breakpoint-down(xl){
+                    padding: 10px 14px;
+                    margin-right: 30px;
+                }
+            }
+        }
+        .footer-icon{
+            .icons{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #f3f3f3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg{
+                    transition: all linear .3s;
+                    filter: grayscale(1);
+                    &:hover{
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.copyright-footer{
+    width: 100%;
+    padding: 20px 0;
+    background: $main-color;
+
+    .copyright-list{
+        ul{
+            li{
+                a{
+                    color: $white-color;
+                    @include media-breakpoint-down(md){
+                        margin-left: -20px;
+                        padding-right: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

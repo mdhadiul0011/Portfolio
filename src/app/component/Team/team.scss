@@ -1,0 +1,220 @@
+.team{
+    margin-bottom: 180px;
+    width: 100%;
+    @include media-breakpoint-down(md){
+        margin-bottom: 60px;
+    }
+    @include media-breakpoint-down(lg){
+        margin-bottom: 60px;
+    }
+    @include media-breakpoint-down(xxl){
+        margin-bottom: 40px;
+    }
+    .team-left{
+        width: 100%;
+        margin-bottom: 180px;
+        position: relative;
+        @include media-breakpoint-down(md){
+            img{
+                width: 100%
+            };
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-between(md, xl){
+            img{
+                width: 100%
+            };
+            margin-bottom: 50px;
+        }
+
+        @include media-breakpoint-down(lg){
+            display: flex;
+            justify-content: center;
+        }
+        @include media-breakpoint-down(xl){
+            img{
+                width: 80%
+            };
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-between(lg, xl){
+            img{
+                width: 80%
+            };
+            margin-bottom: 50px;
+        }
+        .year{
+            background: $main-color;
+            width: 200px;
+            border: 10px solid $white-color;
+            border-top-right-radius: 100px;
+            padding: 15px 20px;
+            text-align: center;
+            position: absolute;
+            bottom: -98px;
+            right: 16px;
+            @include media-breakpoint-down(xl){
+                width: 80%;
+                border-top-right-radius: 0;
+                bottom: -190px;
+                border: none;
+                left: 0px;
+            }
+            @include media-breakpoint-down(lg){
+                left: 70px;
+                bottom: -188px;
+            }
+
+            @include media-breakpoint-between(lg, xl){
+                width: 80%;
+                border-top-right-radius: 0;
+                bottom: -190px;
+                border: none;
+            }
+            @include media-breakpoint-between(xs, sm){
+                border-radius: none;
+                bottom: -152px;
+                border: none;
+                right: 0;
+                left: 45px;
+            }
+            @include media-breakpoint-down(md){
+                border-radius: none;
+                bottom: -152px;
+                border: none;
+                right: 0;
+                left: 42px;
+            }
+            @include media-breakpoint-between(sm, md){
+                // width: 420px;
+                border-radius: none;
+                bottom: -150px;
+                border: none;
+                right: 0;
+                left: 52px;
+            }
+            
+            
+            h3{
+                font-size: 42px;
+                font-weight: 700;
+                color: $white-color;
+                @include media-breakpoint-down(md){
+                    font-size: 30px;
+                }
+            }
+            p{
+                font-size: 20px;
+                font-weight: 700;
+                color: $white-color;
+                @include media-breakpoint-down(md){
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .team-right{
+        @include media-breakpoint-down(md){
+            margin-top: 300px;
+        }
+        @include media-breakpoint-down(lg){
+            margin-top: 180px;
+        }
+        @include media-breakpoint-between(lg, xl){
+            margin-top: 170px;
+        }
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+            color: $font-color;
+            @include media-breakpoint-down(md){
+                font-size: 27px;
+            }
+            @include media-breakpoint-down(lg){
+                font-size: 32px;
+            }
+            @include media-breakpoint-down(xl){
+                font-size: 36px;
+            }
+            span{
+                color: $main-color;
+            }
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            color: $footer-text-color;
+            margin-top: 24px;
+            @include media-breakpoint-down(md){
+                font-size: 14px;
+            }
+            @include media-breakpoint-down(lg){
+                font-size: 16px;
+            }
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 700;
+            color: $footer-text-color;
+            margin-top: 16px;
+            @include media-breakpoint-down(md){
+                font-size: 12px;
+            }
+            @include media-breakpoint-down(lg){
+                font-size: 14px;
+            }
+            .icon{
+                margin-right: 30px;
+                @include media-breakpoint-down(md){
+                    margin-right: 20px;
+                }
+            }
+        }
+        button{
+            margin-top: 40px;
+            padding: 15px 32px;
+            border: 1px solid $main-color;
+            border-radius: 8px;
+            color: $main-color;
+            transition: all linear .4s;
+            font-size: 20px;
+            font-weight: 700;
+            @include media-breakpoint-down(md){
+                padding: 10px 18px;
+            }
+            @include media-breakpoint-down(lg){
+                padding: 10px 18px;
+            }
+            &:hover{
+                background: $main-color;
+                color: $white-color;
+            }
+        }
+        .counterup-start {
+           margin-top: 40px;
+           @include media-breakpoint-down(lg){
+            display: flex;
+            justify-content: center;
+           }
+            .countup{
+                h4{
+                    font-size: 48px;
+                    color: $font-color;
+                    text-align: center;
+                    @include media-breakpoint-down(md){
+                        font-size: 30px;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $footer-text-color;
+                    @include media-breakpoint-down(md){
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

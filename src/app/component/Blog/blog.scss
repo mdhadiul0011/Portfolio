@@ -1,0 +1,98 @@
+.blog{
+    margin-bottom: 80px;
+    .blog-head{
+        // display: flex;
+        // justify-content: center;
+        width: 680px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+        // @include media-breakpoint-down(md){
+        //     width: 100%;
+        // }
+        h2{
+            font-size: 48px;
+            font-weight: 700;
+            color: #414141;
+            margin-bottom: 24px;
+            @include media-breakpoint-down(md){
+                width: 100%;
+                font-size: 27px;
+            }
+            @include media-breakpoint-down(lg){
+                font-size: 32px;
+            }
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            color: $footer-text-color;
+            @include media-breakpoint-down(md){
+                font-size: 14px;
+            }
+            @include media-breakpoint-down(md){
+                font-size: 16px;
+            }
+        }
+    }
+
+    .blog-item{
+        padding: 20px 20px;
+        width: 340px !important;
+        background: $white-color;
+        border: 1px solid gray;
+        border-radius: 8px;
+        @include media-breakpoint-down(xl){
+            width: 300px !important;
+        }
+        
+        
+        
+        @include media-breakpoint-down(lg){
+            width: 225px !important;
+        }
+
+        @include media-breakpoint-down(md){
+            width: 100% !important;
+        }
+
+        @include media-breakpoint-between(sm, md){
+            width: 250px !important;
+        }
+        
+        .blog-img{
+            img{
+                width: 100% !important;
+            }
+        }
+        .calender{
+            color: $footer-text-color;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        .title{
+            color: #121112;
+            font-size: 20px;
+            font-weight: 700;
+            padding-right: 30px;
+            @include media-breakpoint-down(md){
+                font-size: 14px;
+            }
+            @include media-breakpoint-down(lg){
+                font-size: 16px;
+            }
+        }
+        .url{
+            text-decoration: underline;
+            color: $head-text-color;
+            font-size: 16px;
+            font-weight: 700;
+            @include media-breakpoint-down(md){
+                font-size: 12px;
+            }
+        }
+    }
+}
